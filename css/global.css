@@ -1,0 +1,57 @@
+:root {
+  font-size: 62.5%;
+
+  /* Colors */
+  --snitap-sun: hsl(47, 100%, 56%);
+  --snitap-sky-mid: hsl(189, 94%, 43%);
+  --snitap-sky-light: hsl(187, 92%, 69%);
+  --snitap-joy-mid: hsl(333, 71%, 51%);
+  --snitap-joy-light: hsl(329, 86%, 70%);
+  --snitap-leaf-mid: hsl(142, 76%, 36%);
+
+  --text: #000000;
+  --highlights: #000000;
+  --background: #fafafa;
+
+  /* Fonts */
+  --ff-base: 'Montserrat', sans-serif;
+
+  --text-sm: 1.4rem;
+  --text-base: 1.6rem;
+  --text-lg: 4rem;
+  --text-xlg: 6.4rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+button {
+  font: 500 1.6rem/1.5 var(--ff-base);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1,
+h2 {
+  font-family: 'Syne', sans-serif;
+}
+
+h1 {
+  font-size: var(--text-xlg);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--text-lg);
+  line-height: 1.2;
+}
