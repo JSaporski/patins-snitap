@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 6rem;
   width: 100%;
   max-width: 128rem;
   margin-inline: auto;
@@ -140,6 +141,42 @@
     }
   }
   /* */
+
+  @media (max-width: 62.5em) {
+    flex-direction: column-reverse;
+    gap: 3.2rem;
+    padding: 1.6rem 2.4rem 4.8rem;
+
+    & > div:nth-child(1) {
+      max-width: 53.6rem;
+    }
+
+    & .hero-img {
+      width: 31.2rem;
+      height: 31.2rem;
+
+      & img[src*='stars-1'] {
+        top: 8rem;
+        left: -1rem;
+        width: 5.6rem;
+      }
+
+      & img[src*='stars-2'] {
+        right: -1.6rem;
+        width: 2.6rem;
+      }
+    }
+
+    & h1 > div,
+    & h1 > div span {
+      height: 3.9rem;
+    }
+
+    .buttons {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
 }
 
 @keyframes appear {
@@ -224,5 +261,76 @@
 
   100% {
     transform: translateY(-23.1rem);
+  }
+}
+
+@media (max-width: 62.5em) {
+  @keyframes slideUp {
+    0%,
+    22% {
+      transform: translateY(0rem); /* Delay */
+    }
+
+    23% {
+      transform: translateY(calc(-3.9rem - 1.5rem));
+    }
+
+    25% {
+      transform: translateY(calc(-3.9rem + 1rem));
+    }
+
+    27% {
+      transform: translateY(calc(-3.9rem - 0.5rem));
+    }
+
+    29% {
+      transform: translateY(calc(-3.9rem + 0.5rem));
+    }
+
+    33%,
+    55% {
+      transform: translateY(-3.9rem);
+    }
+
+    56% {
+      transform: translateY(calc(-7.8rem - 1.5rem));
+    }
+
+    58% {
+      transform: translateY(calc(-7.8rem + 1rem));
+    }
+
+    60% {
+      transform: translateY(calc(-7.8rem - 0.5rem));
+    }
+
+    62% {
+      transform: translateY(calc(-7.8rem + 0.5rem));
+    }
+
+    66%,
+    88% {
+      transform: translateY(-7.8rem);
+    }
+
+    90% {
+      transform: translateY(calc(-11.7rem - 1.5rem));
+    }
+
+    92% {
+      transform: translateY(calc(-11.7rem + 1rem));
+    }
+
+    94% {
+      transform: translateY(calc(-11.7rem - 0.5rem));
+    }
+
+    96% {
+      transform: translateY(calc(-11.7rem + 0.5rem));
+    }
+
+    100% {
+      transform: translateY(-11.7rem);
+    }
   }
 }

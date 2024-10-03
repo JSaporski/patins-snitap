@@ -26,6 +26,10 @@
     background-position: 0 50%;
     animation: bg-gradient 20s ease infinite;
   }
+
+  @media (max-width: 62.5em) {
+    padding-block: 2.4rem;
+  }
 }
 
 @keyframes bg-gradient {

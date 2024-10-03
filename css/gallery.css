@@ -30,10 +30,10 @@ section.gallery {
       overflow: hidden;
       animation: image-appear linear backwards;
       animation-timeline: view();
-      animation-range: 10rem 50rem;
+      animation-range: 10rem 30rem;
 
       &[data-delay] {
-        animation-range: 15rem 45rem;
+        animation-range: 15rem 35rem;
       }
 
       &:hover {
@@ -87,6 +87,19 @@ section.gallery {
         object-fit: cover;
         border-radius: 50%;
       }
+    }
+  }
+
+  @media (max-width: 62.5em) {
+    padding: 2.4rem;
+
+    & .content {
+      grid-template-areas:
+        'A'
+        'B'
+        'C'
+        'D';
+      gap: 2.4rem;
     }
   }
 }

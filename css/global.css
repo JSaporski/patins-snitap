@@ -20,6 +20,12 @@
   --text-base: 1.6rem;
   --text-lg: 4rem;
   --text-xlg: 6.4rem;
+
+  @media (max-width: 62.5em) {
+    --text-sm: 1.2rem;
+    --text-xlg: 3.2rem;
+    --text-lg: 2.4rem;
+  }
 }
 
 *,
